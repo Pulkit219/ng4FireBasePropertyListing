@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
+
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ListingsComponent } from './components/listings/listings.component';
@@ -14,7 +15,8 @@ import { AddListingComponent } from './components/add-listing/add-listing.compon
 
 const appRoutes: Routes = [
  {path:'' , component:HomeComponent},
-  {path:'listings' , component:ListingsComponent}
+  {path:'listings' , component:ListingsComponent},
+
   
 
 ];
@@ -27,7 +29,7 @@ const appRoutes: Routes = [
     NavbarComponent,
     ListingComponent,
     EditListingComponent,
-    AddListingComponent,
+    AddListingComponent
     
   ],
   imports: [
