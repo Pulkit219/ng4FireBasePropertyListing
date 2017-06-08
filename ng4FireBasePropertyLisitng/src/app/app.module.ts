@@ -16,6 +16,8 @@ import { AddListingComponent } from './components/add-listing/add-listing.compon
 const appRoutes: Routes = [
  {path:'' , component:HomeComponent},
   {path:'listings' , component:ListingsComponent},
+  {path:'add-listing' , component:AddListingComponent}
+
 
   
 
