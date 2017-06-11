@@ -8,11 +8,9 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-fireb: FirebaseListObservable<any[]>;
-  constructor(private firb : FirebaseService) {
-this.fireb = firb.getListings();
-console.log(this.fireb);
-console.log("getting stated");
+
+  constructor() {
+
    }
 
   ngOnInit() {

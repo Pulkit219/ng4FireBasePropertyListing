@@ -31,10 +31,13 @@ const appRoutes: Routes = [
   {path:'listings' , component:ListingsComponent},
   {path:'add-listing' , component:AddListingComponent}
 
-
-  
-
 ];
+// const firebaseAuthConfig ={
+
+//   provider: AuthProviders.Google,
+//   method: AuthMethods.Popup
+// };
+
 
 @NgModule({
   declarations: [

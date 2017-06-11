@@ -24,6 +24,11 @@ return this.listings;
 
 interface Listing 
 {
-
-
+$key?:string;
+title?:string;
+image?:string;
+type?:string;
+city?:string;
+owner?:string;
+bedroom?:string;
 }
