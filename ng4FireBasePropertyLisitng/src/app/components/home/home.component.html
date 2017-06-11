@@ -3,5 +3,10 @@
     <h1>Welcome to Property Listings</h1>
     <p>Create a free account to access hottest listings</p>
     <a href="#"><img src="assets/img/googleSignIn.png" style="width: 300px;"> </a>
+    <ul>
+      <li class="text" *ngFor="let item of fireb | async">
+        {{item.$value}}
+      </li>
+    </ul>
   </div>
 </div>
