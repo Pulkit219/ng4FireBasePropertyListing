@@ -8,7 +8,7 @@ listings: FirebaseListObservable<any[]>;
   constructor(private afd: AngularFireDatabase)
   
    {
-this.listings = afd.list('/listings') as FirebaseListObservable<Listing[]>
+this.listings = afd.list('/listings/listings') as FirebaseListObservable<Listing[]>
 
     //  this.listings = afd.list('/listings');
     }
