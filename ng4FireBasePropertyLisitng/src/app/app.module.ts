@@ -59,6 +59,7 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes),
     AngularFireModule.initializeApp(firebaseConfig),
+    FlashMessagesModule,
      AngularFireDatabaseModule, // imports firebase/database, only needed for database features
     AngularFireAuthModule
   ],
