@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FirebaseService } from "../../services/firebase.service";
-import { FirebaseListObservable } from 'angularfire2/database';
+import { FlashMessagesService } from 'angular2-flash-messages';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +10,20 @@ import { FirebaseListObservable } from 'angularfire2/database';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+flmm:FlashMessagesService;
+  user: Observable<firebase.User>;
 
-  constructor() {
+  constructor(public flm: FlashMessagesService, public afauth: AngularFireAuth) {
+this.flmm = flm;
+   this.user = afauth.authState;
 
    }
 
   ngOnInit() {
   }
 
+
+ login() {
+    this.afauth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+  }
 }
