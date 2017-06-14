@@ -25,5 +25,6 @@ this.flmm = flm;
 
  login() {
     this.afauth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+    this.flmm.show('Logged in successfully ' , {cssClass: 'alert-success', timeout:3000});
   }
 }
