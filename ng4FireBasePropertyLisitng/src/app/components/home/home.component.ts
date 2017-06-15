@@ -14,7 +14,7 @@ flmm:FlashMessagesService;
   user: Observable<firebase.User>;
 
   constructor(public flm: FlashMessagesService, public afauth: AngularFireAuth) {
-this.flmm = flm;
+   this.flmm = flm;
    this.user = afauth.authState;
 
    }
