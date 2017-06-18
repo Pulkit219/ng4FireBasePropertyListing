@@ -26,7 +26,17 @@ export class AddListingComponent implements OnInit {
 onAddSubmit()
 {
 
-  console.log(this.title);
+    let listing = {
+      title: this.title,
+      city: this.title,
+      owner: this.owner,
+      bedrooms:this.bedrooms,
+      price: this.price,
+      type: this.type
+    }
+
+    this.firebaseService.addListing(listing);
+    this.router.navigate(['/lisings']);
 }
 
 }

@@ -9,7 +9,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 })
 export class ListingComponent implements OnInit {
 id:any;
- listing:any;
+listing:any;
 imageUrl:any;
 
   constructor(
