@@ -36,7 +36,7 @@ onAddSubmit()
     }
 
     this.firebaseService.addListing(listing);
-    this.router.navigate(['/lisings']);
+    this.router.navigate(['/listings']);
 }
 
 }
