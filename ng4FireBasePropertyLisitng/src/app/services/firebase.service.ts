@@ -56,4 +56,5 @@ type?:string;
 city?:string;
 owner?:string;
 bedroom?:string;
+
 }
