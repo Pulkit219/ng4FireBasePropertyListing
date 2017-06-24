@@ -6,7 +6,7 @@ import * as firebase from 'firebase';
 export class FirebaseService {
 
 listings: FirebaseListObservable<any[]>;
-listing:FirebaseObjectObservable<any[]>;
+listing:FirebaseObjectObservable<any>;
   folder: any;
 
   constructor(private afd: AngularFireDatabase)

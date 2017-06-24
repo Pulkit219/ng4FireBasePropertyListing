@@ -17,7 +17,7 @@
        <li class="list-group-item">price: {{listing.price}}</li>
      </ul>
    </div>
-   <a class="btn btn-primary" href="#">Edit</a>
-     <a class="btn btn-danger" href="#">Danger</a>
+   <a class="btn btn-primary" [routerLink]="['/edit-listing/'+listing.$key]" >Edit</a>
+     <a class="btn btn-danger">Danger</a>
  </div>
  </div>
