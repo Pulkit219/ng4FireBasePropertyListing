@@ -1,7 +1,7 @@
-<a [routerLink]="['/listings']">Back</a>
+<a [routerLink]="['/listing/'+listing.$key]">Back</a>
 <br />
   <h2 class="page-header">Edit Listings</h2>
-  <form (submit)="onAddSubmit()">
+  <form (submit)="onEditSubmit()">
     <div class="form-group">
       <label>Title</label>
       <input class="form-control" type="text" [(ngModel)]="title" name="title" required>

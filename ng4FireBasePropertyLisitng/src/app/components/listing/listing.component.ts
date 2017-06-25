@@ -37,7 +37,15 @@ imageUrl:any;
 
       
   });
+}
+
+onDeleteClick()
+{
+  this.firebaseService.deleteListing(this.id)
+  {
+    this.router.navigate(['/listings']);
   }
+}
 
 
 

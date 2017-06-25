@@ -15,13 +15,14 @@ listing:FirebaseObjectObservable<any>;
 // this.listings = afd.list('/listings/listings') as FirebaseListObservable<Listing[]>
 
     //  this.listings = afd.list('/listings');
+     this.listings = this.afd.list('/listings/listings') as FirebaseListObservable<Listing[]>;
     this.folder = 'listingimages';
     }
 
 
   getListings()
   {
-    this.listings = this.afd.list('/listings/listings') as FirebaseListObservable<Listing[]>;
+   
 return this.listings;
 
   }
@@ -45,6 +46,15 @@ let storageRef = firebase.storage().ref();
     }
 
 }
+
+  updateListing(id, listing){
+    return this.listings.update(id, listing);
+  }
+
+    deleteListing(id){
+    return this.listings.remove(id);
+}
+
 }
 
 interface Listing 
